@@ -1,0 +1,12 @@
+eureka:
+  client:
+    service-url:
+      defaultZone:  http://192.168.26.128:8761/eureka/
+server:
+  port: 8762
+spring:
+  application:
+    name: service-hi
+  output:
+    ansi:
+      enabled: always

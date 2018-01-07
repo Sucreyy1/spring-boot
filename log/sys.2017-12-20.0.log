@@ -1,0 +1,13 @@
+2017-12-20 11:40:37,950 INFO (SpringApplication.java:661)- No active profile set, falling back to default profiles: default
+2017-12-20 11:40:42,152 INFO (StartupInfoLogger.java:57)- Started CloudApp in 6.27 seconds (JVM running for 8.375)
+2017-12-20 11:54:07,744 INFO (SpringApplication.java:661)- No active profile set, falling back to default profiles: default
+2017-12-20 11:54:10,566 INFO (StartupInfoLogger.java:57)- Started CloudApp in 4.462 seconds (JVM running for 5.032)
+2017-12-20 13:45:54,948 INFO (SpringApplication.java:661)- No active profile set, falling back to default profiles: default
+2017-12-20 13:45:57,762 INFO (StartupInfoLogger.java:57)- Started CloudApp in 4.642 seconds (JVM running for 5.485)
+2017-12-20 13:49:22,906 INFO (SpringApplication.java:661)- No active profile set, falling back to default profiles: default
+2017-12-20 13:49:25,738 INFO (StartupInfoLogger.java:57)- Started CloudApp in 4.735 seconds (JVM running for 5.317)
+2017-12-20 13:52:33,181 INFO (SpringApplication.java:661)- No active profile set, falling back to default profiles: default
+2017-12-20 13:52:35,969 INFO (StartupInfoLogger.java:57)- Started CloudApp in 4.446 seconds (JVM running for 5.063)
+2017-12-20 14:23:50,899 INFO (SpringApplication.java:661)- No active profile set, falling back to default profiles: default
+2017-12-20 14:23:53,926 INFO (StartupInfoLogger.java:57)- Started CloudApp in 4.78 seconds (JVM running for 5.312)
+2017-12-20 16:27:26,685 INFO (SpringApplication.java:665)- The following profiles are active: default

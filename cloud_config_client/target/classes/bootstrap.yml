@@ -1,0 +1,8 @@
+#这个配置表示通过server去读取git上面cloud1-test.yml文件里的配置
+spring:
+  cloud:
+    config:
+      name: cloud1
+      profile: test
+      uri: http://localhost:9999
+      label: master

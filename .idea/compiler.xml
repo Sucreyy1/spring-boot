@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="app" />
+        <module name="cloud" />
+        <module name="cloud-Netflix-Eureka-server" />
+        <module name="cloud_config" />
+        <module name="cloud_config_client" />
+        <module name="cloud_config_server" />
+        <module name="cloud_Netflix_Eureka_client" />
+        <module name="cloud_Netflix_Eureka_server" />
+        <module name="cloudNetflixEurekaserver" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="app" target="1.8" />
+      <module name="cloud" target="1.8" />
+      <module name="cloud-Netflix-Eureka-server" target="1.8" />
+      <module name="cloud_config" target="1.8" />
+      <module name="cloud_config_client" target="1.8" />
+      <module name="cloud_config_server" target="1.8" />
+      <module name="cloud_Netflix_Eureka_client" target="1.8" />
+      <module name="cloud_Netflix_Eureka_server" target="1.8" />
+      <module name="cloudNetflixEurekaserver" target="1.8" />
+      <module name="spring-boot" target="1.6" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: cloud-client
+server:
+  port: 8002
+

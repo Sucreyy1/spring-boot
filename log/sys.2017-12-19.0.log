@@ -1,0 +1,2 @@
+2017-12-19 18:00:40,895 INFO (SpringApplication.java:661)- No active profile set, falling back to default profiles: default
+2017-12-19 18:00:43,665 INFO (StartupInfoLogger.java:57)- Started CloudApp in 4.474 seconds (JVM running for 5.071)

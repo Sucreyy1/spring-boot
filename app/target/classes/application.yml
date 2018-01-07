@@ -1,0 +1,77 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost/spring?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&transformedBitIsBoolean=true&autoReconnect=true&failOverReadOnly=false
+    username: root
+    password: root
+  redis:
+    database: 0
+    host: 192.168.26.128
+    port: 6379
+    password:
+    pool:
+      #连接池最大连接数
+      max-active: 8
+      #连接池最大阻塞等待时间 -1表示没有限制
+      max-wait: -1
+      #连接池最大空闲链接
+      max-idle: 8
+      #连接池最小空闲链接
+      min-idle: 0
+    timeout: 0
+
+  jpa:
+    database: mysql
+    show-sql: true
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+  profiles:
+    active: default
+  output:
+    ansi:
+      enabled: always
+  application:
+    name: app
+
+  #spring cloud config 配置 (读取git上云配置信息)
+  #spring cloud 访问git上的配置文件会被转换成web接口,访问可以参照一下的规则:
+  #/{application}/{profile}[/{label}]
+  #/{application}-{profile}.yml
+  #/{label}/{application}-{profile}.yml
+  #/{application}-{profile}.properties
+  #/{label}/{application}-{profile}.properties
+  #以下面配置的git地址读取cloud-test.yml文件,在浏览器输入localhost:8090/cloud/test
+  cloud:
+    config:
+      server:
+        git:
+          uri:  https://github.com/Sucreyy1/configuration #配置git仓库的地址
+#          username: 593143487@qq.com
+#          password: a88973271
+
+eureka:
+  instance:
+    hostname: 192.168.26.128
+    port: 8761
+  client:
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
+
+#feign:
+#  compression:
+##    请求压缩功能
+#    request:
+#      enable: true
+##    响应压缩功能
+#    response:
+#      enable: true
+
+server:
+  port: 8090
+  session:
+    timeout: 30
+  tomcat:
+    max-threads: 200
+    uri-encoding: UTF-8

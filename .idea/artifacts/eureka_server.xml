@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="eureka-server">
+    <output-path>E:/share</output-path>
+    <root id="archive" name="eureka-server.jar">
+      <element id="module-output" name="cloud_Netflix_Eureka_server" />
+    </root>
+  </artifact>
+</component>
