@@ -4,6 +4,8 @@ import app.qlExpress.operater.JointOperator;
 import com.ql.util.express.DefaultContext;
 import com.ql.util.express.ExpressRunner;
 
+import java.util.Arrays;
+
 public class QLEpressTest {
 
     public static void main(String[] args) {
@@ -31,6 +33,12 @@ public class QLEpressTest {
             Object grage = runner.execute("是否合格", context, null, false, false);
             System.out.println(average);
             System.out.println(grage);
+            //解析静态文本中的变量
+            String exress="double 平均分 = (数学+语文+英语)/3.0";
+            String[] outVarNames = runner.getOutVarNames(exress);
+            System.out.println(Arrays.toString(outVarNames));
+            Object execute3 = runner.execute(exress, context, null, false, false);
+            System.out.println(execute3);
         } catch (Exception e) {
             e.printStackTrace();
         }
