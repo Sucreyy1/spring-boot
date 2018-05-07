@@ -3,6 +3,7 @@ package app.aop;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.stereotype.Component;
 
 /**
@@ -12,10 +13,16 @@ import org.springframework.stereotype.Component;
 @Component
 public class AopService {
 
-    @Around("execution(* app.HelloWorld.index())")
-    public String get(ProceedingJoinPoint pjp){
-        System.out.println("aop executed!");
-        return "yy";
+    @Pointcut("execution(* app.HelloWorld.*(..))")
+    public void baffle(){
+
+    }
+
+    @Around("baffle()")
+    public String get(ProceedingJoinPoint pjp) throws Throwable {
+        Object[] args = pjp.getArgs();
+        pjp.proceed();
+        return "";
     }
 
 }
