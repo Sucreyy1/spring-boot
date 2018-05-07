@@ -27,6 +27,12 @@
     <!-- spring-boot的web启动的jar包 -->
     <dependencies>
 
+        <dependency>
+            <groupId>org.redisson</groupId>
+            <artifactId>redisson</artifactId>
+            <version>3.5.0</version>
+        </dependency>
+
         <!--spring cloud config 配置-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -118,6 +124,12 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>QLExpress</artifactId>
+            <version>3.2.0</version>
         </dependency>
     </dependencies>
 
